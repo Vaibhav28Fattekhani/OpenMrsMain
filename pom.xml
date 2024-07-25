@@ -28,8 +28,8 @@
     <configuration>
           <suiteXmlFiles> 
 			<suiteXmlFile>C:\Projects\OpenMrsMain\SmokeSuit.xml</suiteXmlFile> 
-			<suiteXmlFile>C:\Projects\OpenMrsMain\Regression.xml.xml</suiteXmlFile> 
-			<suiteXmlFile>C:\Projects\OpenMrsMain\OpenMrs.xml.xml</suiteXmlFile> 
+			<suiteXmlFile>C:\Projects\OpenMrsMain\Regression.xml</suiteXmlFile> 
+			<suiteXmlFile>C:\Projects\OpenMrsMain\OpenMrs.xml</suiteXmlFile> 
 		  </suiteXmlFiles>  
     </configuration>
     </plugin>
