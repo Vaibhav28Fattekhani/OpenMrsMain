@@ -6,6 +6,7 @@
       <class name="TestClasses.LoginTest">
         <methods>
           <include name="prerequsite"/>
+          <include name="SuccessfulLogin"/>
           <include name="Check_Optioncount_and_data"/>
           <include name="teardown"/>
         </methods>

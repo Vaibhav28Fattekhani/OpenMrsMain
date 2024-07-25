@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="1" total="8" passed="0" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-21T06:57:32 IST" name="Suite" finished-at="2024-06-21T06:58:49 IST" duration-ms="77860">
+  <suite started-at="2024-07-25T13:38:42 IST" name="Default suite" finished-at="2024-07-25T13:38:43 IST" duration-ms="1453">
     <groups>
       <group name="Regression">
-        <method signature="LoginTest.SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" name="SuccessfulLogin" class="TestClasses.LoginTest"/>
+        <method signature="LoginTest.SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" name="SuccessfulLogin" class="TestClasses.LoginTest"/>
       </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginTest.Check_Optioncount_and_data()[pri:3, instance:TestClasses.LoginTest@5656be13]" name="Check_Optioncount_and_data" class="TestClasses.LoginTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-06-21T06:57:32 IST" name="Test" finished-at="2024-06-21T06:58:49 IST" duration-ms="77860">
+    <test started-at="2024-07-25T13:38:42 IST" name="Default test" finished-at="2024-07-25T13:38:43 IST" duration-ms="1453">
       <class name="TestClasses.LoginTest">
-        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:57:33 IST" name="prerequsite" finished-at="2024-06-21T06:57:45 IST" duration-ms="12210" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1721894923268" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequsite -->
-        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:57:45 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-06-21T06:57:51 IST" duration-ms="5683" status="PASS">
+        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -39,25 +77,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:57:51 IST" name="teardown" finished-at="2024-06-21T06:57:52 IST" duration-ms="968" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:57:52 IST" name="prerequsite" finished-at="2024-06-21T06:58:02 IST" duration-ms="10513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequsite -->
-        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:02 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-06-21T06:58:05 IST" duration-ms="2165" status="PASS">
+        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-07-25T13:38:43 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -75,25 +148,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:05 IST" name="teardown" finished-at="2024-06-21T06:58:06 IST" duration-ms="1715" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:06 IST" name="prerequsite" finished-at="2024-06-21T06:58:11 IST" duration-ms="4535" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequsite -->
-        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:11 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-06-21T06:58:17 IST" duration-ms="6553" status="PASS">
+        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-07-25T13:38:43 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -111,25 +219,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:17 IST" name="teardown" finished-at="2024-06-21T06:58:18 IST" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:18 IST" name="prerequsite" finished-at="2024-06-21T06:58:25 IST" duration-ms="6612" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequsite -->
-        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:25 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-06-21T06:58:27 IST" duration-ms="2595" status="PASS">
+        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -147,25 +290,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:27 IST" name="teardown" finished-at="2024-06-21T06:58:28 IST" duration-ms="832" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:28 IST" name="prerequsite" finished-at="2024-06-21T06:58:36 IST" duration-ms="7736" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequsite -->
-        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:36 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-06-21T06:58:38 IST" duration-ms="2261" status="PASS">
+        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-07-25T13:38:43 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -183,25 +361,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:38 IST" name="teardown" finished-at="2024-06-21T06:58:39 IST" duration-ms="928" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:39 IST" name="prerequsite" finished-at="2024-06-21T06:58:46 IST" duration-ms="7267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequsite -->
-        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:46 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-06-21T06:58:49 IST" duration-ms="2075" status="PASS">
+        <test-method signature="SuccessfulLogin(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="SuccessfulLogin" data-provider="SuccessfulLogin_getdata" finished-at="2024-07-25T13:38:43 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -219,14 +432,110 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5bf8fa12]" started-at="2024-06-21T06:58:49 IST" name="teardown" finished-at="2024-06-21T06:58:49 IST" duration-ms="854" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="prerequsite(java.lang.String)[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="prerequsite" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequsite -->
+        <test-method signature="Check_Optioncount_and_data()[pri:3, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="Check_Optioncount_and_data" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browsername' is required by BeforeMethod on method prerequsite but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-2008198127\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Optioncount_and_data -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestClasses.LoginTest@5656be13]" started-at="2024-07-25T13:38:43 IST" name="teardown" finished-at="2024-07-25T13:38:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestClasses.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
